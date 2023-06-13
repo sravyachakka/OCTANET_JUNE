@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="shortcut icon" type="image/png" href="list.png" />
-  <link rel="stylesheet" href="style.css">
-  <title>To-do List</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee shop</title>
+    <link rel="stylesheet" href="coffee.css">
 </head>
 <body>
+    <noscript>You need to enable javaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div class="container">
+        <header class="coffee-header">
+            <div class="div-logo">
+                <img src="coffee-logo.webp">
+                <span class="logo-text">Coffee Shop</span>
+            </div>
+                <nav class="coffee-nav">
+                <a href="#">Home</a>
+                <a href="#product">Product</a>
+                <a href="#">Price</a>
+                <a href="#">About</a>
+                </nav>
+        </header>
+        <div class="site-content">
+            <div class="image-content">
+                <h1 class="quote">Coffee is the best thing to douse the sunrise with.</h1>
+            </div>
+            <div class="card-list">
+                <h1 id="product">product</h1>
+                <div class="card">
+                    <img src="mocha-image.png">
+                    <div> <h2>Mocha</h2>
+                        <h3>&#8377; 250</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="cappuccino-image.png">
+                    <div> <h2>Mocha</h2>
+                        <h3>&#8377; 250</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="americano-image.png">
+                    <div> <h2>Mocha</h2>
+                        <h3>&#8377; 250</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="latte-image.png">
+                    <div> <h2>Mocha</h2>
+                       <h3>&#8377; 250</h3>
+                    </div>
+                </div>
 
-  <main>
-    <header>
-      <div class="container">
-        <div id="header">
-          <h2><i class="fas fa-clipboard-check"></i> To-do List</h2>
-          <div class="user_input">
-            <input type="text" id="input" placeholder="I need to..."><button id="add_item">Submit</button>
-          </div>
+            </div>
+            <div class="card-list"></div>
+            <div class="order-section">
+                <h1 id="order">Order</h1>
+                <script type="text/javascript" src="https://form.jotform.com/jsform/222301766629053"></script>
+            </div>
         </div>
-      </div>
-    </header>
-    
-    <section>
-      <div class="container">
-        <div id="to_do_list"></div>
-      </div>
-    </section>
-  </main>  
-
-  <script src="script.js"></script>
+    </div>    
 </body>
-
 </html>
